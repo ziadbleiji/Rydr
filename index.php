@@ -16,8 +16,20 @@ switch($url){
         require "pages/over-ons.php";
         break;
 
+    case 'events':
+        require "pages/events.php";
+        break;
+
     case 'car-detail':
         require "pages/car-detail.php";
+        break;
+
+    case 'checkout':
+        require "pages/checkout.php";
+        break;
+
+    case 'rent-handler':
+        require "rent-handler.php";
         break;
 
     case 'account':
@@ -41,6 +53,6 @@ switch($url){
         break;
 
     default:
-        require "pages/404.php";
+        require "pages/home.php";
         break;
 }
